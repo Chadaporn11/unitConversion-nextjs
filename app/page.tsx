@@ -48,12 +48,10 @@ export default function Home() {
     event: React.ChangeEvent<{ name?: string; value: unknown }>
   ) => {
     const name = event.target.name as keyof typeof conversion;
-    console.log(name, event.target.value);
     setConversion({ ...conversion, [name]: event.target.value });
   };
 
   const changeCategory = (value: CategoryInterface) => {
-    console.log("before", conversion);
     getUnitListByCategory(value.id);
     setCategory(value);
     setConversion({
@@ -61,7 +59,6 @@ export default function Home() {
       unitId: "",
       categoryId: value.id,
     });
-    console.log("after", conversion);
   };
 
   const clearData = () => {
@@ -81,7 +78,6 @@ export default function Home() {
     fetch(url, requestOptions)
       .then((response) => response.json())
       .then((res) => {
-        console.log(res.data);
         if (res.data) {
           setCategorys(res.data);
           setCategory(res.data[0]);
@@ -109,7 +105,6 @@ export default function Home() {
           unitId: "",
           categoryId: res.data[0].categoryId,
         });
-        console.log(res);
       });
   };
 
