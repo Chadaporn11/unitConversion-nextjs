@@ -59,7 +59,7 @@ function ResultPage() {
   }, []);
 
   if (loading) {
-    return <div>Loading...</div>;
+    return <div className="w-full h-full flex justify-center items-center">Loading...</div>;
   }
 
   return (
