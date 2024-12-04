@@ -14,46 +14,52 @@ Ensure the following are installed on your system:
 Node.js (v16 or higher)
 npm or yarn
 Installation
-Clone the repository:
-
-bash
-คัดลอกโค้ด
+## Clone the repository:
+```sh
 git clone https://github.com/Chadaporn11/unitConversion-nextjs.git
+```
+```sh
 cd unitConversion-nextjs
-Install project dependencies:
+```
+## Install project dependencies:
 
-bash
-คัดลอกโค้ด
+```sh
 npm install
+```
 # or
+```sh
 yarn install
-Start the development server:
+```
+## Start the development server:
 
-bash
-คัดลอกโค้ด
+```sh
 npm run dev
+```
 # or
+```sh
 yarn dev
-Open your browser and navigate to:
+```
 
-arduino
-คัดลอกโค้ด
-http://localhost:3000
+
 Building for Production
 Build the project:
 
-bash
-คัดลอกโค้ด
+```sh
 npm run build
+```
 # or
+```sh
 yarn build
-Start the production server:
+```
+## Start the production server:
 
-bash
-คัดลอกโค้ด
+```sh
 npm start
+```
 # or
+```sh
 yarn start
+```
 Technologies Used
 Next.js: Framework for server-side rendering and static site generation.
 React: JavaScript library for building user interfaces.
